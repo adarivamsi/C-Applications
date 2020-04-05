@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1489764586 source:e:\proprojects\c\vc-snake\main.c
+	<stdio.h>
+	<conio.h>
+	<time.h>
+	<stdlib.h>
+	<ctype.h>
+	<windows.h>
+	<process.h>
+

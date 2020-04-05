@@ -1,0 +1,236 @@
+\hypertarget{main_8c}{}\section{E\+:/\+Pro\+Projects/\+C/\+V\+C\+Tic\+Tac\+Toe/main.c File Reference}
+\label{main_8c}\index{E\+:/\+Pro\+Projects/\+C/\+V\+C\+Tic\+Tac\+Toe/main.\+c@{E\+:/\+Pro\+Projects/\+C/\+V\+C\+Tic\+Tac\+Toe/main.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$conio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+Include dependency graph for main.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8c_a2a0e843767aeea4f433a28b9c54f573a}{menu} ()
+\item 
+void \hyperlink{main_8c_a35e53f2eca89f6e5ea20158e1a29fa66}{go} (int n)
+\item 
+void \hyperlink{main_8c_a671b58f5509a3a9fa692bacccfc32cc9}{start\+\_\+game} ()
+\item 
+void \hyperlink{main_8c_a57b99a84aa5c3bd4feb124c98473bcdb}{check\+\_\+draw} ()
+\item 
+void \hyperlink{main_8c_a46c90689f48a08ca6da9c0216bc2e90e}{draw\+\_\+board} ()
+\item 
+void \hyperlink{main_8c_a7c5ce0dbe9648ce33e5ce60b01fc05d1}{player\+\_\+first} ()
+\item 
+void \hyperlink{main_8c_a412d22a18302f28b2ff4b3e6cd704d5d}{put\+\_\+\+X\+\_\+O} (char ch, int pos)
+\item 
+void \hyperlink{main_8c_ae824443b3f661414ba1f2718e17fe97d}{gotoxy} (int x, int y)
+\item 
+void \hyperlink{main_8c_acdef7a1fd863a6d3770c1268cb06add3}{main} ()
+\item 
+int \hyperlink{main_8c_a871f9b80c058a8b7151f753c1656590b}{make2} ()
+\item 
+int \hyperlink{main_8c_abcb720f6dd90c54abc71cee5221671a5}{make4} ()
+\item 
+int \hyperlink{main_8c_a0da6bf272ad047e98359f37a7e010a1d}{posswin} (int p)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8c_a81cc255afbb7d0182be4027b24164cf2}{board} \mbox{[}10\mbox{]} = \{2,2,2,2,2,2,2,2,2,2\}
+\item 
+int \hyperlink{main_8c_aaefa47f4fdf865c2358c22b542a993e4}{turn} = 1
+\item 
+int \hyperlink{main_8c_adf916204820072417ed73a32de1cefcf}{flag} = 0
+\item 
+int \hyperlink{main_8c_ae78f447e0fc84c538b91b0cc8c8a34fa}{player}
+\item 
+int \hyperlink{main_8c_a1b3f06ddcdb29e455759b0afa41793a5}{comp}
+\item 
+C\+O\+O\+RD \hyperlink{main_8c_afd9018d32867a27a7ce20ae665e80462}{coord} =\{0,0\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a57b99a84aa5c3bd4feb124c98473bcdb}\label{main_8c_a57b99a84aa5c3bd4feb124c98473bcdb}} 
+\index{main.\+c@{main.\+c}!check\+\_\+draw@{check\+\_\+draw}}
+\index{check\+\_\+draw@{check\+\_\+draw}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{check\+\_\+draw()}{check\_draw()}}
+{\footnotesize\ttfamily void check\+\_\+draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 224 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a46c90689f48a08ca6da9c0216bc2e90e}\label{main_8c_a46c90689f48a08ca6da9c0216bc2e90e}} 
+\index{main.\+c@{main.\+c}!draw\+\_\+board@{draw\+\_\+board}}
+\index{draw\+\_\+board@{draw\+\_\+board}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{draw\+\_\+board()}{draw\_board()}}
+{\footnotesize\ttfamily void draw\+\_\+board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 235 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a35e53f2eca89f6e5ea20158e1a29fa66}\label{main_8c_a35e53f2eca89f6e5ea20158e1a29fa66}} 
+\index{main.\+c@{main.\+c}!go@{go}}
+\index{go@{go}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{go()}{go()}}
+{\footnotesize\ttfamily void go (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Definition at line 159 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_ae824443b3f661414ba1f2718e17fe97d}\label{main_8c_ae824443b3f661414ba1f2718e17fe97d}} 
+\index{main.\+c@{main.\+c}!gotoxy@{gotoxy}}
+\index{gotoxy@{gotoxy}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{gotoxy()}{gotoxy()}}
+{\footnotesize\ttfamily void gotoxy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_acdef7a1fd863a6d3770c1268cb06add3}\label{main_8c_acdef7a1fd863a6d3770c1268cb06add3}} 
+\index{main.\+c@{main.\+c}!main@{main}}
+\index{main@{main}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily void main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 31 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a871f9b80c058a8b7151f753c1656590b}\label{main_8c_a871f9b80c058a8b7151f753c1656590b}} 
+\index{main.\+c@{main.\+c}!make2@{make2}}
+\index{make2@{make2}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{make2()}{make2()}}
+{\footnotesize\ttfamily int make2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 68 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_abcb720f6dd90c54abc71cee5221671a5}\label{main_8c_abcb720f6dd90c54abc71cee5221671a5}} 
+\index{main.\+c@{main.\+c}!make4@{make4}}
+\index{make4@{make4}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{make4()}{make4()}}
+{\footnotesize\ttfamily int make4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 83 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a2a0e843767aeea4f433a28b9c54f573a}\label{main_8c_a2a0e843767aeea4f433a28b9c54f573a}} 
+\index{main.\+c@{main.\+c}!menu@{menu}}
+\index{menu@{menu}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily void menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 38 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a7c5ce0dbe9648ce33e5ce60b01fc05d1}\label{main_8c_a7c5ce0dbe9648ce33e5ce60b01fc05d1}} 
+\index{main.\+c@{main.\+c}!player\+\_\+first@{player\+\_\+first}}
+\index{player\+\_\+first@{player\+\_\+first}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{player\+\_\+first()}{player\_first()}}
+{\footnotesize\ttfamily void player\+\_\+first (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 168 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a0da6bf272ad047e98359f37a7e010a1d}\label{main_8c_a0da6bf272ad047e98359f37a7e010a1d}} 
+\index{main.\+c@{main.\+c}!posswin@{posswin}}
+\index{posswin@{posswin}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{posswin()}{posswin()}}
+{\footnotesize\ttfamily int posswin (\begin{DoxyParamCaption}\item[{int}]{p }\end{DoxyParamCaption})}
+
+
+
+Definition at line 96 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a412d22a18302f28b2ff4b3e6cd704d5d}\label{main_8c_a412d22a18302f28b2ff4b3e6cd704d5d}} 
+\index{main.\+c@{main.\+c}!put\+\_\+\+X\+\_\+O@{put\+\_\+\+X\+\_\+O}}
+\index{put\+\_\+\+X\+\_\+O@{put\+\_\+\+X\+\_\+O}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{put\+\_\+\+X\+\_\+\+O()}{put\_X\_O()}}
+{\footnotesize\ttfamily void put\+\_\+\+X\+\_\+O (\begin{DoxyParamCaption}\item[{char}]{ch,  }\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Definition at line 259 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a671b58f5509a3a9fa692bacccfc32cc9}\label{main_8c_a671b58f5509a3a9fa692bacccfc32cc9}} 
+\index{main.\+c@{main.\+c}!start\+\_\+game@{start\+\_\+game}}
+\index{start\+\_\+game@{start\+\_\+game}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{start\+\_\+game()}{start\_game()}}
+{\footnotesize\ttfamily void start\+\_\+game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 196 of file main.\+c.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{main_8c_a81cc255afbb7d0182be4027b24164cf2}\label{main_8c_a81cc255afbb7d0182be4027b24164cf2}} 
+\index{main.\+c@{main.\+c}!board@{board}}
+\index{board@{board}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{board}{board}}
+{\footnotesize\ttfamily int board\mbox{[}10\mbox{]} = \{2,2,2,2,2,2,2,2,2,2\}}
+
+Tic Tac Toe Game Developed by Adari Vamsi -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---Version 1.\+1-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- Grab the Input device to Play Harder Adari Vamsi Visual Efx 
+
+Definition at line 11 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_a1b3f06ddcdb29e455759b0afa41793a5}\label{main_8c_a1b3f06ddcdb29e455759b0afa41793a5}} 
+\index{main.\+c@{main.\+c}!comp@{comp}}
+\index{comp@{comp}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{comp}{comp}}
+{\footnotesize\ttfamily int comp}
+
+
+
+Definition at line 12 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_afd9018d32867a27a7ce20ae665e80462}\label{main_8c_afd9018d32867a27a7ce20ae665e80462}} 
+\index{main.\+c@{main.\+c}!coord@{coord}}
+\index{coord@{coord}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{coord}{coord}}
+{\footnotesize\ttfamily C\+O\+O\+RD coord =\{0,0\}}
+
+
+
+Definition at line 21 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_adf916204820072417ed73a32de1cefcf}\label{main_8c_adf916204820072417ed73a32de1cefcf}} 
+\index{main.\+c@{main.\+c}!flag@{flag}}
+\index{flag@{flag}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{flag}{flag}}
+{\footnotesize\ttfamily int flag = 0}
+
+
+
+Definition at line 12 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_ae78f447e0fc84c538b91b0cc8c8a34fa}\label{main_8c_ae78f447e0fc84c538b91b0cc8c8a34fa}} 
+\index{main.\+c@{main.\+c}!player@{player}}
+\index{player@{player}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily int player}
+
+
+
+Definition at line 12 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_aaefa47f4fdf865c2358c22b542a993e4}\label{main_8c_aaefa47f4fdf865c2358c22b542a993e4}} 
+\index{main.\+c@{main.\+c}!turn@{turn}}
+\index{turn@{turn}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{turn}{turn}}
+{\footnotesize\ttfamily int turn = 1}
+
+
+
+Definition at line 12 of file main.\+c.
+

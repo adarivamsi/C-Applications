@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1490086579 source:e:\proprojects\c\vclibrary\main.c
+	<windows.h>
+	<stdio.h>
+	<conio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<dos.h>
+	<time.h>
+

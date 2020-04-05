@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="main_8c" kind="file"><name>main.c</name>
+    <member refid="main_8c_1a81cc255afbb7d0182be4027b24164cf2" kind="variable"><name>board</name></member>
+    <member refid="main_8c_1aaefa47f4fdf865c2358c22b542a993e4" kind="variable"><name>turn</name></member>
+    <member refid="main_8c_1adf916204820072417ed73a32de1cefcf" kind="variable"><name>flag</name></member>
+    <member refid="main_8c_1ae78f447e0fc84c538b91b0cc8c8a34fa" kind="variable"><name>player</name></member>
+    <member refid="main_8c_1a1b3f06ddcdb29e455759b0afa41793a5" kind="variable"><name>comp</name></member>
+    <member refid="main_8c_1afd9018d32867a27a7ce20ae665e80462" kind="variable"><name>coord</name></member>
+    <member refid="main_8c_1a2a0e843767aeea4f433a28b9c54f573a" kind="function"><name>menu</name></member>
+    <member refid="main_8c_1a35e53f2eca89f6e5ea20158e1a29fa66" kind="function"><name>go</name></member>
+    <member refid="main_8c_1a671b58f5509a3a9fa692bacccfc32cc9" kind="function"><name>start_game</name></member>
+    <member refid="main_8c_1a57b99a84aa5c3bd4feb124c98473bcdb" kind="function"><name>check_draw</name></member>
+    <member refid="main_8c_1a46c90689f48a08ca6da9c0216bc2e90e" kind="function"><name>draw_board</name></member>
+    <member refid="main_8c_1a7c5ce0dbe9648ce33e5ce60b01fc05d1" kind="function"><name>player_first</name></member>
+    <member refid="main_8c_1a412d22a18302f28b2ff4b3e6cd704d5d" kind="function"><name>put_X_O</name></member>
+    <member refid="main_8c_1ae824443b3f661414ba1f2718e17fe97d" kind="function"><name>gotoxy</name></member>
+    <member refid="main_8c_1acdef7a1fd863a6d3770c1268cb06add3" kind="function"><name>main</name></member>
+    <member refid="main_8c_1a871f9b80c058a8b7151f753c1656590b" kind="function"><name>make2</name></member>
+    <member refid="main_8c_1abcb720f6dd90c54abc71cee5221671a5" kind="function"><name>make4</name></member>
+    <member refid="main_8c_1a0da6bf272ad047e98359f37a7e010a1d" kind="function"><name>posswin</name></member>
+  </compound>
+  <compound refid="dir_5f8bd6846036bd8010e41f87248afc72" kind="dir"><name>E:/ProProjects/C</name>
+  </compound>
+  <compound refid="dir_885cc87fac2d91e269af0a5a959fa5f6" kind="dir"><name>E:</name>
+  </compound>
+  <compound refid="dir_f8c673a07eee505ae4ea83cd45aaa48d" kind="dir"><name>E:/ProProjects</name>
+  </compound>
+  <compound refid="dir_e12ca249cf840cf34aa5a3d33d56a6e0" kind="dir"><name>E:/ProProjects/C/VCTicTacToe</name>
+  </compound>
+</doxygenindex>

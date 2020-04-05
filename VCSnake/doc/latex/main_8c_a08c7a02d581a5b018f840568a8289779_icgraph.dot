@@ -1,0 +1,45 @@
+digraph "GotoXY"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node57 [label="GotoXY",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node57 -> Node58 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node58 [label="Down",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a8ecb72ff0fd235afbf997e25815a13d5"];
+  Node58 -> Node59 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node59 [label="Move",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a678e66228c0453fbbe74a605bcc27c51"];
+  Node59 -> Node60 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node60 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4"];
+  Node59 -> Node61 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node61 [label="ExitGame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a4ae4a6c601765f289ae97678bb8a4d6a"];
+  Node61 -> Node59 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node57 -> Node62 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node62 [label="Left",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#ac268cc4e608aa0068c30f2e4a652b084"];
+  Node62 -> Node59 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node57 -> Node63 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node63 [label="Right",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a1b0e394cd24dadbcff32387d3036da5f"];
+  Node63 -> Node59 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node57 -> Node64 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node64 [label="Bend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a7ea3861fdbe2c138a4768c1bc57edc06"];
+  Node64 -> Node58 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node64 -> Node62 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node64 -> Node63 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node64 -> Node65 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node65 [label="Up",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#aa1e4dcf406c3281b132a396a60965e0f"];
+  Node65 -> Node59 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node57 -> Node66 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node66 [label="Border",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#abaeb2da49953d85564a28fe29cb0ee89"];
+  Node66 -> Node60 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node66 -> Node59 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node57 -> Node67 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node67 [label="Score",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#afc01ad71e5a2a27ebbbe7b7983cbb02b"];
+  Node67 -> Node68 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node68 [label="Delay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#aad49cedd771da5ce9872fb364e8d6373"];
+  Node68 -> Node59 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node67 -> Node69 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node69 [label="Scoreonly",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a40a74cbfd7d2271a5a5caeb629197dd1"];
+  Node69 -> Node70 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node70 [label="record",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#ad2ae727c20e5f803e5f075b41aea2fb4"];
+  Node70 -> Node61 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node57 -> Node65 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

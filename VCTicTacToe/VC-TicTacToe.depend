@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1489999249 source:e:\proprojects\c\vctictactoe\vc-tictactoe\main.c
+	<stdio.h>
+	<conio.h>
+	<stdlib.h>
+	<windows.h>
+
+1490006180 source:e:\proprojects\c\vctictactoe\main.c
+	<stdio.h>
+	<conio.h>
+	<stdlib.h>
+	<windows.h>
+

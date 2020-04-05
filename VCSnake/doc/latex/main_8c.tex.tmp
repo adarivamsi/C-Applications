@@ -1,0 +1,358 @@
+\hypertarget{main_8c}{}\section{E\+:/\+Pro\+Projects/\+C/\+V\+C-\/\+Snake/main.c File Reference}
+\label{main_8c}\index{E\+:/\+Pro\+Projects/\+C/\+V\+C-\/\+Snake/main.\+c@{E\+:/\+Pro\+Projects/\+C/\+V\+C-\/\+Snake/main.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$conio.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$process.\+h$>$}\newline
+Include dependency graph for main.\+c\+:
+% FIG 0
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcoordinate}{coordinate}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{main_8c_a1965eaca47dbf3f87acdafc2208f04eb}{UP}~72
+\item 
+\#define \hyperlink{main_8c_a4193cd1c8c2e6ebd0e056fa2364a663f}{D\+O\+WN}~80
+\item 
+\#define \hyperlink{main_8c_a437ef08681e7210d6678427030446a54}{L\+E\+FT}~75
+\item 
+\#define \hyperlink{main_8c_a80fb826a684cf3f0d306b22aa100ddac}{R\+I\+G\+HT}~77
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structcoordinate}{coordinate} \hyperlink{main_8c_ac0e5b7b5b4d698de3f31f6644ca0a94e}{coordinate}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8c_ad2ae727c20e5f803e5f075b41aea2fb4}{record} ()
+\item 
+void \hyperlink{main_8c_a78f61ac2dd03bcba8e09ca20cd7d68e3}{load} ()
+\item 
+void \hyperlink{main_8c_aad49cedd771da5ce9872fb364e8d6373}{Delay} (long double)
+\item 
+void \hyperlink{main_8c_a678e66228c0453fbbe74a605bcc27c51}{Move} ()
+\item 
+void \hyperlink{main_8c_a1951985f3541f595fc7800fbd6dc5535}{Food} ()
+\item 
+int \hyperlink{main_8c_afc01ad71e5a2a27ebbbe7b7983cbb02b}{Score} ()
+\item 
+void \hyperlink{main_8c_a9dcac18006ce057b8d78c847174c1362}{Print} ()
+\item 
+void \hyperlink{main_8c_ae824443b3f661414ba1f2718e17fe97d}{gotoxy} (int x, int y)
+\item 
+void \hyperlink{main_8c_a08c7a02d581a5b018f840568a8289779}{Goto\+XY} (int x, int y)
+\item 
+void \hyperlink{main_8c_a7ea3861fdbe2c138a4768c1bc57edc06}{Bend} ()
+\item 
+void \hyperlink{main_8c_abaeb2da49953d85564a28fe29cb0ee89}{Border} ()
+\item 
+void \hyperlink{main_8c_a8ecb72ff0fd235afbf997e25815a13d5}{Down} ()
+\item 
+void \hyperlink{main_8c_ac268cc4e608aa0068c30f2e4a652b084}{Left} ()
+\item 
+void \hyperlink{main_8c_aa1e4dcf406c3281b132a396a60965e0f}{Up} ()
+\item 
+void \hyperlink{main_8c_a1b0e394cd24dadbcff32387d3036da5f}{Right} ()
+\item 
+void \hyperlink{main_8c_a4ae4a6c601765f289ae97678bb8a4d6a}{Exit\+Game} ()
+\item 
+int \hyperlink{main_8c_a40a74cbfd7d2271a5a5caeb629197dd1}{Scoreonly} ()
+\item 
+int \hyperlink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8c_a9f59b34b1f25fe00023291b678246bcc}{length}
+\item 
+int \hyperlink{main_8c_a63f972d7e05d93c97d5764c956b84e9d}{bend\+\_\+no}
+\item 
+int \hyperlink{main_8c_afed088663f8704004425cdae2120b9b3}{len}
+\item 
+int \hyperlink{main_8c_adf488ff0ce8098cd956c07890cbc5d50}{life}
+\item 
+char \hyperlink{main_8c_acad36f7a1211e9e9da68e181667d9c3f}{key}
+\item 
+\hyperlink{structcoordinate}{coordinate} \hyperlink{main_8c_aab9e0b5690a385c58d24c9b0f3ef87b7}{head}
+\item 
+\hyperlink{structcoordinate}{coordinate} \hyperlink{main_8c_acc5af854395ae3db6620f93a074d95a0}{bend} \mbox{[}500\mbox{]}
+\item 
+\hyperlink{structcoordinate}{coordinate} \hyperlink{main_8c_ab14451ea6560009c56ff7baf9a447552}{food}
+\item 
+\hyperlink{structcoordinate}{coordinate} \hyperlink{main_8c_a54ce08adae86f9b0fe42b9c55b544a4c}{body} \mbox{[}30\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{main_8c_a4193cd1c8c2e6ebd0e056fa2364a663f}\label{main_8c_a4193cd1c8c2e6ebd0e056fa2364a663f}} 
+\index{main.\+c@{main.\+c}!D\+O\+WN@{D\+O\+WN}}
+\index{D\+O\+WN@{D\+O\+WN}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{D\+O\+WN}{DOWN}}
+{\footnotesize\ttfamily \#define D\+O\+WN~80}
+
+\mbox{\Hypertarget{main_8c_a437ef08681e7210d6678427030446a54}\label{main_8c_a437ef08681e7210d6678427030446a54}} 
+\index{main.\+c@{main.\+c}!L\+E\+FT@{L\+E\+FT}}
+\index{L\+E\+FT@{L\+E\+FT}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{L\+E\+FT}{LEFT}}
+{\footnotesize\ttfamily \#define L\+E\+FT~75}
+
+\mbox{\Hypertarget{main_8c_a80fb826a684cf3f0d306b22aa100ddac}\label{main_8c_a80fb826a684cf3f0d306b22aa100ddac}} 
+\index{main.\+c@{main.\+c}!R\+I\+G\+HT@{R\+I\+G\+HT}}
+\index{R\+I\+G\+HT@{R\+I\+G\+HT}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{R\+I\+G\+HT}{RIGHT}}
+{\footnotesize\ttfamily \#define R\+I\+G\+HT~77}
+
+\mbox{\Hypertarget{main_8c_a1965eaca47dbf3f87acdafc2208f04eb}\label{main_8c_a1965eaca47dbf3f87acdafc2208f04eb}} 
+\index{main.\+c@{main.\+c}!UP@{UP}}
+\index{UP@{UP}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{UP}{UP}}
+{\footnotesize\ttfamily \#define UP~72}
+
+Snake Bite Game Developed by Adari Vamsi -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---Version 1.\+1-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- Grab the Input device to Play Harder Adari Vamsi Visual Efx 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{main_8c_ac0e5b7b5b4d698de3f31f6644ca0a94e}\label{main_8c_ac0e5b7b5b4d698de3f31f6644ca0a94e}} 
+\index{main.\+c@{main.\+c}!coordinate@{coordinate}}
+\index{coordinate@{coordinate}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{coordinate}{coordinate}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structcoordinate}{coordinate} \hyperlink{structcoordinate}{coordinate}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a7ea3861fdbe2c138a4768c1bc57edc06}\label{main_8c_a7ea3861fdbe2c138a4768c1bc57edc06}} 
+\index{main.\+c@{main.\+c}!Bend@{Bend}}
+\index{Bend@{Bend}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{Bend()}{Bend()}}
+{\footnotesize\ttfamily void Bend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 1
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{main_8c_abaeb2da49953d85564a28fe29cb0ee89}\label{main_8c_abaeb2da49953d85564a28fe29cb0ee89}} 
+\index{main.\+c@{main.\+c}!Border@{Border}}
+\index{Border@{Border}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{Border()}{Border()}}
+{\footnotesize\ttfamily void Border (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{main_8c_aad49cedd771da5ce9872fb364e8d6373}\label{main_8c_aad49cedd771da5ce9872fb364e8d6373}} 
+\index{main.\+c@{main.\+c}!Delay@{Delay}}
+\index{Delay@{Delay}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{Delay()}{Delay()}}
+{\footnotesize\ttfamily void Delay (\begin{DoxyParamCaption}\item[{long double}]{k }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 5
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{main_8c_a8ecb72ff0fd235afbf997e25815a13d5}\label{main_8c_a8ecb72ff0fd235afbf997e25815a13d5}} 
+\index{main.\+c@{main.\+c}!Down@{Down}}
+\index{Down@{Down}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{Down()}{Down()}}
+{\footnotesize\ttfamily void Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 7
+Here is the caller graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{main_8c_a4ae4a6c601765f289ae97678bb8a4d6a}\label{main_8c_a4ae4a6c601765f289ae97678bb8a4d6a}} 
+\index{main.\+c@{main.\+c}!Exit\+Game@{Exit\+Game}}
+\index{Exit\+Game@{Exit\+Game}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{Exit\+Game()}{ExitGame()}}
+{\footnotesize\ttfamily void Exit\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 9
+Here is the caller graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{main_8c_a1951985f3541f595fc7800fbd6dc5535}\label{main_8c_a1951985f3541f595fc7800fbd6dc5535}} 
+\index{main.\+c@{main.\+c}!Food@{Food}}
+\index{Food@{Food}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{Food()}{Food()}}
+{\footnotesize\ttfamily void Food (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{main_8c_ae824443b3f661414ba1f2718e17fe97d}\label{main_8c_ae824443b3f661414ba1f2718e17fe97d}} 
+\index{main.\+c@{main.\+c}!gotoxy@{gotoxy}}
+\index{gotoxy@{gotoxy}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{gotoxy()}{gotoxy()}}
+{\footnotesize\ttfamily void gotoxy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{main_8c_a08c7a02d581a5b018f840568a8289779}\label{main_8c_a08c7a02d581a5b018f840568a8289779}} 
+\index{main.\+c@{main.\+c}!Goto\+XY@{Goto\+XY}}
+\index{Goto\+XY@{Goto\+XY}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{Goto\+X\+Y()}{GotoXY()}}
+{\footnotesize\ttfamily void Goto\+XY (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{main_8c_ac268cc4e608aa0068c30f2e4a652b084}\label{main_8c_ac268cc4e608aa0068c30f2e4a652b084}} 
+\index{main.\+c@{main.\+c}!Left@{Left}}
+\index{Left@{Left}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{Left()}{Left()}}
+{\footnotesize\ttfamily void Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 14
+Here is the caller graph for this function\+:
+% FIG 15
+\mbox{\Hypertarget{main_8c_a78f61ac2dd03bcba8e09ca20cd7d68e3}\label{main_8c_a78f61ac2dd03bcba8e09ca20cd7d68e3}} 
+\index{main.\+c@{main.\+c}!load@{load}}
+\index{load@{load}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 16
+Here is the caller graph for this function\+:
+% FIG 17
+\mbox{\Hypertarget{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.\+c@{main.\+c}!main@{main}}
+\index{main@{main}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 18
+\mbox{\Hypertarget{main_8c_a678e66228c0453fbbe74a605bcc27c51}\label{main_8c_a678e66228c0453fbbe74a605bcc27c51}} 
+\index{main.\+c@{main.\+c}!Move@{Move}}
+\index{Move@{Move}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 19
+Here is the caller graph for this function\+:
+% FIG 20
+\mbox{\Hypertarget{main_8c_a9dcac18006ce057b8d78c847174c1362}\label{main_8c_a9dcac18006ce057b8d78c847174c1362}} 
+\index{main.\+c@{main.\+c}!Print@{Print}}
+\index{Print@{Print}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void Print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+% FIG 21
+\mbox{\Hypertarget{main_8c_ad2ae727c20e5f803e5f075b41aea2fb4}\label{main_8c_ad2ae727c20e5f803e5f075b41aea2fb4}} 
+\index{main.\+c@{main.\+c}!record@{record}}
+\index{record@{record}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{record()}{record()}}
+{\footnotesize\ttfamily void record (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 22
+Here is the caller graph for this function\+:
+% FIG 23
+\mbox{\Hypertarget{main_8c_a1b0e394cd24dadbcff32387d3036da5f}\label{main_8c_a1b0e394cd24dadbcff32387d3036da5f}} 
+\index{main.\+c@{main.\+c}!Right@{Right}}
+\index{Right@{Right}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{Right()}{Right()}}
+{\footnotesize\ttfamily void Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 24
+Here is the caller graph for this function\+:
+% FIG 25
+\mbox{\Hypertarget{main_8c_afc01ad71e5a2a27ebbbe7b7983cbb02b}\label{main_8c_afc01ad71e5a2a27ebbbe7b7983cbb02b}} 
+\index{main.\+c@{main.\+c}!Score@{Score}}
+\index{Score@{Score}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{Score()}{Score()}}
+{\footnotesize\ttfamily int Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 26
+Here is the caller graph for this function\+:
+% FIG 27
+\mbox{\Hypertarget{main_8c_a40a74cbfd7d2271a5a5caeb629197dd1}\label{main_8c_a40a74cbfd7d2271a5a5caeb629197dd1}} 
+\index{main.\+c@{main.\+c}!Scoreonly@{Scoreonly}}
+\index{Scoreonly@{Scoreonly}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{Scoreonly()}{Scoreonly()}}
+{\footnotesize\ttfamily int Scoreonly (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 28
+Here is the caller graph for this function\+:
+% FIG 29
+\mbox{\Hypertarget{main_8c_aa1e4dcf406c3281b132a396a60965e0f}\label{main_8c_aa1e4dcf406c3281b132a396a60965e0f}} 
+\index{main.\+c@{main.\+c}!Up@{Up}}
+\index{Up@{Up}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{Up()}{Up()}}
+{\footnotesize\ttfamily void Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 30
+Here is the caller graph for this function\+:
+% FIG 31
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{main_8c_acc5af854395ae3db6620f93a074d95a0}\label{main_8c_acc5af854395ae3db6620f93a074d95a0}} 
+\index{main.\+c@{main.\+c}!bend@{bend}}
+\index{bend@{bend}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{bend}{bend}}
+{\footnotesize\ttfamily \hyperlink{structcoordinate}{coordinate} bend\mbox{[}500\mbox{]}}
+
+\mbox{\Hypertarget{main_8c_a63f972d7e05d93c97d5764c956b84e9d}\label{main_8c_a63f972d7e05d93c97d5764c956b84e9d}} 
+\index{main.\+c@{main.\+c}!bend\+\_\+no@{bend\+\_\+no}}
+\index{bend\+\_\+no@{bend\+\_\+no}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{bend\+\_\+no}{bend\_no}}
+{\footnotesize\ttfamily int bend\+\_\+no}
+
+\mbox{\Hypertarget{main_8c_a54ce08adae86f9b0fe42b9c55b544a4c}\label{main_8c_a54ce08adae86f9b0fe42b9c55b544a4c}} 
+\index{main.\+c@{main.\+c}!body@{body}}
+\index{body@{body}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{body}{body}}
+{\footnotesize\ttfamily \hyperlink{structcoordinate}{coordinate} body\mbox{[}30\mbox{]}}
+
+\mbox{\Hypertarget{main_8c_ab14451ea6560009c56ff7baf9a447552}\label{main_8c_ab14451ea6560009c56ff7baf9a447552}} 
+\index{main.\+c@{main.\+c}!food@{food}}
+\index{food@{food}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{food}{food}}
+{\footnotesize\ttfamily \hyperlink{structcoordinate}{coordinate} food}
+
+\mbox{\Hypertarget{main_8c_aab9e0b5690a385c58d24c9b0f3ef87b7}\label{main_8c_aab9e0b5690a385c58d24c9b0f3ef87b7}} 
+\index{main.\+c@{main.\+c}!head@{head}}
+\index{head@{head}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{head}{head}}
+{\footnotesize\ttfamily \hyperlink{structcoordinate}{coordinate} head}
+
+\mbox{\Hypertarget{main_8c_acad36f7a1211e9e9da68e181667d9c3f}\label{main_8c_acad36f7a1211e9e9da68e181667d9c3f}} 
+\index{main.\+c@{main.\+c}!key@{key}}
+\index{key@{key}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily char key}
+
+\mbox{\Hypertarget{main_8c_afed088663f8704004425cdae2120b9b3}\label{main_8c_afed088663f8704004425cdae2120b9b3}} 
+\index{main.\+c@{main.\+c}!len@{len}}
+\index{len@{len}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{len}{len}}
+{\footnotesize\ttfamily int len}
+
+\mbox{\Hypertarget{main_8c_a9f59b34b1f25fe00023291b678246bcc}\label{main_8c_a9f59b34b1f25fe00023291b678246bcc}} 
+\index{main.\+c@{main.\+c}!length@{length}}
+\index{length@{length}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily int length}
+
+\mbox{\Hypertarget{main_8c_adf488ff0ce8098cd956c07890cbc5d50}\label{main_8c_adf488ff0ce8098cd956c07890cbc5d50}} 
+\index{main.\+c@{main.\+c}!life@{life}}
+\index{life@{life}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{life}{life}}
+{\footnotesize\ttfamily int life}
+

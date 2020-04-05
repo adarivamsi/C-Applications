@@ -1,0 +1,217 @@
+.TH "E:/ProProjects/C/VC-Snake/main.c" 3 "Mon Mar 20 2017" "VC - Snake Bite" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+E:/ProProjects/C/VC-Snake/main.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <conio\&.h>\fP
+.br
+\fC#include <time\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <ctype\&.h>\fP
+.br
+\fC#include <windows\&.h>\fP
+.br
+\fC#include <process\&.h>\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBcoordinate\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBUP\fP   72"
+.br
+.ti -1c
+.RI "#define \fBDOWN\fP   80"
+.br
+.ti -1c
+.RI "#define \fBLEFT\fP   75"
+.br
+.ti -1c
+.RI "#define \fBRIGHT\fP   77"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBcoordinate\fP \fBcoordinate\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBrecord\fP ()"
+.br
+.ti -1c
+.RI "void \fBload\fP ()"
+.br
+.ti -1c
+.RI "void \fBDelay\fP (long double)"
+.br
+.ti -1c
+.RI "void \fBMove\fP ()"
+.br
+.ti -1c
+.RI "void \fBFood\fP ()"
+.br
+.ti -1c
+.RI "int \fBScore\fP ()"
+.br
+.ti -1c
+.RI "void \fBPrint\fP ()"
+.br
+.ti -1c
+.RI "void \fBgotoxy\fP (int x, int y)"
+.br
+.ti -1c
+.RI "void \fBGotoXY\fP (int x, int y)"
+.br
+.ti -1c
+.RI "void \fBBend\fP ()"
+.br
+.ti -1c
+.RI "void \fBBorder\fP ()"
+.br
+.ti -1c
+.RI "void \fBDown\fP ()"
+.br
+.ti -1c
+.RI "void \fBLeft\fP ()"
+.br
+.ti -1c
+.RI "void \fBUp\fP ()"
+.br
+.ti -1c
+.RI "void \fBRight\fP ()"
+.br
+.ti -1c
+.RI "void \fBExitGame\fP ()"
+.br
+.ti -1c
+.RI "int \fBScoreonly\fP ()"
+.br
+.ti -1c
+.RI "int \fBmain\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBlength\fP"
+.br
+.ti -1c
+.RI "int \fBbend_no\fP"
+.br
+.ti -1c
+.RI "int \fBlen\fP"
+.br
+.ti -1c
+.RI "int \fBlife\fP"
+.br
+.ti -1c
+.RI "char \fBkey\fP"
+.br
+.ti -1c
+.RI "\fBcoordinate\fP \fBhead\fP"
+.br
+.ti -1c
+.RI "\fBcoordinate\fP \fBbend\fP [500]"
+.br
+.ti -1c
+.RI "\fBcoordinate\fP \fBfood\fP"
+.br
+.ti -1c
+.RI "\fBcoordinate\fP \fBbody\fP [30]"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DOWN   80"
+
+.SS "#define LEFT   75"
+
+.SS "#define RIGHT   77"
+
+.SS "#define UP   72"
+Snake Bite Game Developed by Adari Vamsi --------------Version 1\&.1--------------- Grab the Input device to Play Harder Adari Vamsi Visual Efx 
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fBcoordinate\fP \fBcoordinate\fP"
+
+.SH "Function Documentation"
+.PP 
+.SS "void Bend ()"
+
+.SS "void Border ()"
+
+.SS "void Delay (long double k)"
+
+.SS "void Down ()"
+
+.SS "void ExitGame ()"
+
+.SS "void Food ()"
+
+.SS "void gotoxy (int x, int y)"
+
+.SS "void GotoXY (int x, int y)"
+
+.SS "void Left ()"
+
+.SS "void load ()"
+
+.SS "int main ()"
+
+.SS "void Move ()"
+
+.SS "void Print ()"
+
+.SS "void record ()"
+
+.SS "void Right ()"
+
+.SS "int Score ()"
+
+.SS "int Scoreonly ()"
+
+.SS "void Up ()"
+
+.SH "Variable Documentation"
+.PP 
+.SS "\fBcoordinate\fP bend[500]"
+
+.SS "int bend_no"
+
+.SS "\fBcoordinate\fP body[30]"
+
+.SS "\fBcoordinate\fP food"
+
+.SS "\fBcoordinate\fP head"
+
+.SS "char key"
+
+.SS "int len"
+
+.SS "int length"
+
+.SS "int life"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for VC - Snake Bite from the source code\&.
